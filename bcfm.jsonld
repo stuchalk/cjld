@@ -4,8 +4,8 @@
         "https://github.com/stuchalk/cjld/blob/master/cjld_context.jsonld",
         {
             "dc": "http://purl.org/dc/terms/",
-            "cjld": "https://github.com/stuchalk/cjld/blob/master/cjldo.owl",
-            "obo": "http://purl.obolibrary.org/obo/",
+            "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        	"cjld": "https://github.com/stuchalk/cjld/blob/master/cjldo.owl",
             "ci": "http://semanticscience.org/ontology/cheminf.owl#"
         },
         {"@base": "https://github.com/stuchalk/cjld/bcfm.jsonld#"}

@@ -8,9 +8,12 @@
             "obo": "http://purl.obolibrary.org/obo/",
             "ci": "http://semanticscience.org/ontology/cheminf.owl#"
         },
-        {"@base": "https://github.com/stuchalk/cjld/bcfm.jsonld#"}
+        {"@base": "https://github.com/stuchalk/cjld/reaction1.jsonld#"}
     ],
-    "entity": "https://github.com/stuchalk/cjld/blob/master/cjldo.owl#molecule",
+    "entity": [
+        "https://github.com/stuchalk/cjld/blob/master/cjldo.owl#molecule",
+        "https://github.com/stuchalk/cjld/blob/master/cjldo.owl#reaction"
+    ],
     "toc": {
         "@id": "toc/",
         "@type": "dc:tableOfContents",
@@ -22,7 +25,8 @@
             "elementlayer/",
             "atomlayer/",
             "bondlayer/",
-            "positionlayer/"
+            "positionlayer/",
+            "reactionlayer/"
         ]
     },
     "layers": [
@@ -77,14 +81,37 @@
             "@type": "dc:identifier",
             "name": "chemical identifiers",
             "reference": "https://github.com/stuchalk/cjld/identifier_layer",
-            "content": {
-                "@context": "https://github.com/stuchalk/cjld/blob/master/cjld_identifiers.jsonld",
-                "@id": "molecule/1",
-                "@type": "ci:CHEMINF_000464",
-                "iupacname": "bromo-chloro-fluoromethane",
-                "inchi": "InChI=1S/CHBrClF/c2-1(3)4/h1H",
-                "formula": "CHBrClF"
-            }
+            "@context": "https://github.com/stuchalk/cjld/blob/master/cjld_identifiers.jsonld",
+            "content": [
+                {
+                    "@id": "molecule/1",
+                    "@type": "ci:CHEMINF_000464",
+                    "iupacname": "bromo-chloro-fluoromethane",
+                    "inchi": "InChI=1S/CHBrClF/c2-1(3)4/h1H",
+                    "formula": "CHBrClF"
+                },
+                {
+                    "@id": "molecule/2/",
+                    "@type": "ci:CHEMINF_000464",
+                    "iupacname": "oxidane",
+                    "inchi": "InChI=1S/H2O/h1H2",
+                    "formula": "H2O"
+                },
+                {
+                    "@id": "molecule/3",
+                    "@type": "ci:CHEMINF_000464",
+                    "iupacname": "oxidane",
+                    "inchi": "InChI=1S/H2O/h1H2",
+                    "formula": "H2O"
+                },
+                {
+                    "@id": "molecule/4",
+                    "@type": "ci:CHEMINF_000464",
+                    "iupacname": "oxidane",
+                    "inchi": "InChI=1S/H2O/h1H2",
+                    "formula": "H2O"
+                }
+            ]
         },
         {
             "@id": "isotopelayer/",
@@ -259,21 +286,47 @@
                 },
                 {
                     "@id": "position/4/",
-                    "format": "cartesian",
                     "@type": "sio:SIO_000056",
+                    "format": "cartesian",
                     "xcoord": 0.4187,
                     "ycoord": 0.5156,
                     "zcoord": -0.1089
                 },
                 {
                     "@id": "position/5/",
-                    "format": "cartesian",
                     "@type": "sio:SIO_000056",
+                    "format": "cartesian",
                     "xcoord": -0.5247,
                     "ycoord": 1.0372,
                     "zcoord": -0.0454
                 }
             ]
+        },
+        {
+            "@id": "reactionlayer/",
+            "@type": "cjdl:containsReactions",
+            "name": "reactions",
+            "reference": "https://github.com/stuchalk/cjld/reaction_layer",
+            "@context": "https://github.com/stuchalk/cjld/blob/master/cjld_reaction.jsonld",
+            "content": [{
+                "@id": "reaction/1/",
+                "@type": "sio:SIO_010345",
+                "reactants": [
+                    "molecule/1/",
+                    "molecule/2/"
+                ],
+                "products": [
+                    "molecule/3/",
+                    "molecule/4/"
+                ],
+                "conditions": [{
+                    "@id": "condition/1/",
+                    "@type": "cjld:isReactionCondition",
+                    "proerty": "temperature",
+                    "value": "35.2",
+                    "unit": "qudt:DEG_C"
+                }]
+            }]
         }
     ]
 }

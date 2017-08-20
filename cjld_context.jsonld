@@ -1,47 +1,49 @@
-{
-    "@context": [{
+{"@context": [
+    {
         "dc": "http://purl.org/dc/terms/",
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
         "cjld": "https://github.com/stuchalk/cjld/cjldo.owl#"
-    }],
-    "@vocab": "http://www.w3.org/2001/XMLSchema#",
-    "entity": {
-        "@id": "cjld:isChemicalEntity",
-        "@type": "@id"
     },
-    "toc": {
-        "@id": "dc:tableOfContents",
-        "@type": "dc:hasPart",
-        "name": {"@type": "name"},
-        "entries": {"@type": "entries"}
-    },
-    "entries": {
-        "@id": "cjld:hasLayer",
-        "@type": "@id"
-    },
-    "layers": {
-        "@id": "cjld:isLayer",
-        "@type": "dc:isPartOf",
-        "name": {"@type": "name"},
-        "scope": {"@type": "scope"},
-        "reference": {"@type": "reference"},
-        "content": {"@type": "content"}
-    },
-    "name": {
-        "@id": "dc:title",
-        "@type": "string"
-    },
-    "scope": {
-        "@id": "dc:isPartOf",
-        "@type": "@id"
-    },
-    "reference": {
-        "@id": "dc:references",
-        "@type": "@id"
-    },
-    "content": {"@id": "cjld:layerContent"},
-    "rdfs_label": {
-        "@id": "rdfs:label",
-        "@type": "string"
+    {
+        "@vocab": "http://www.w3.org/2001/XMLSchema#",
+        "entity": {
+            "@id": "cjld:isChemicalEntity",
+            "@type": "@id"
+        },
+        "toc": {
+            "@id": "dc:tableOfContents",
+            "@type": "dc:hasPart",
+            "name": {"@type": "name"},
+            "entries": {"@type": "entries"}
+        },
+        "entries": {
+            "@id": "cjld:hasLayer",
+            "@type": "@id"
+        },
+        "layers": {
+            "@id": "cjld:isLayer",
+            "@type": "dc:isPartOf",
+            "name": {"@type": "name"},
+            "scope": {"@type": "scope"},
+            "reference": {"@type": "reference"},
+            "content": {"@type": "content"}
+        },
+        "name": {
+            "@id": "dc:title",
+            "@type": "string"
+        },
+        "scope": {
+            "@id": "dc:isPartOf",
+            "@type": "@id"
+        },
+        "reference": {
+            "@id": "dc:references",
+            "@type": "@id"
+        },
+        "content": {"@id": "cjld:layerContent"},
+        "rdfs_label": {
+            "@id": "rdfs:label",
+            "@type": "string"
+        }
     }
-}
+]}

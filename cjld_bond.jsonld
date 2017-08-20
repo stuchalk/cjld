@@ -1,17 +1,15 @@
-{"@context": [
-    {
+{
+    "@context": [{
         "ci": "http://semanticscience.org/ontology/cheminf.owl#",
-    	"cjld": "https://github.com/stuchalk/cjld/cjldo.owl"
+        "cjld": "https://github.com/stuchalk/cjld/cjldo.owl"
+    }],
+    "@vocab": "http://www.w3.org/2001/XMLSchema#",
+    "order": {
+        "@id": "ci:CHEMINF_000062",
+        "@type": "decimal"
     },
-    {
-        "@vocab": "http://www.w3.org/2001/XMLSchema#",
-        "order": {
-            "@id": "ci:CHEMINF_000062",
-            "@type": "decimal"
-        },
-        "participants": {
-            "@id": "cjld:hasParticipant",
-            "@type": "@id"
-        }
+    "participants": {
+        "@id": "cjld:hasParticipant",
+        "@type": "@id"
     }
-]}
+}

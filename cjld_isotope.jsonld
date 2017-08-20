@@ -1,20 +1,16 @@
-{"@context": [
-    {
-        "cjld": "https://github.com/stuchalk/cjld/cjldo.owl#"
+{
+    "@context": [{"cjld": "https://github.com/stuchalk/cjld/cjldo.owl#"}],
+    "@vocab": "http://www.w3.org/2001/XMLSchema#",
+    "protoncount": {
+        "@id": "cjld:protonCount",
+        "@type": "integer"
     },
-    {
-        "@vocab": "http://www.w3.org/2001/XMLSchema#",
-        "protoncount": {
-            "@id": "cjld:protonCount",
-            "@type": "integer"
-        },
-        "neutroncount": {
-            "@id": "cjld:neutronCount",
-            "@type": "integer"
-        },
-        "electroncount": {
-            "@id": "cjld:protonCount",
-            "@type": "integer"
-        }
+    "neutroncount": {
+        "@id": "cjld:neutronCount",
+        "@type": "integer"
+    },
+    "electroncount": {
+        "@id": "cjld:protonCount",
+        "@type": "integer"
     }
-]}
+}

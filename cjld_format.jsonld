@@ -1,30 +1,24 @@
-{"@context": [
-    {
-        "dc": "http://purl.org/dc/terms/",
-        "cjson": "https://github.com/stuchalk/chemical_json/cjo.owl",
-        "xsd": "http://www.w3.org/2001/XMLSchema#"
+{
+    "@context": [{"dc": "http://purl.org/dc/terms/"}],
+    "@vocab": "http://www.w3.org/2001/XMLSchema#",
+    "name": {
+        "@id": "dc:title",
+        "@type": "string"
     },
-    {
-        "@vocab": "http://www.w3.org/2001/XMLSchema#",
-        "name": {
-            "@id": "dc:title",
-            "@type": "string"
-        },
-        "spec": {
-            "@id": "dc:description",
-            "@type": "@id"
-        },
-        "publisher": {
-            "@id": "dc:publisher",
-            "@type": "string"
-        },
-        "version": {
-            "@id": "dc:hasVersion",
-            "@type": "string"
-        },
-        "data": {
-            "@id": "dc:date",
-            "@type": "string"
-        }
+    "spec": {
+        "@id": "dc:description",
+        "@type": "@id"
+    },
+    "publisher": {
+        "@id": "dc:publisher",
+        "@type": "string"
+    },
+    "version": {
+        "@id": "dc:hasVersion",
+        "@type": "string"
+    },
+    "data": {
+        "@id": "dc:date",
+        "@type": "string"
     }
-]}
+}

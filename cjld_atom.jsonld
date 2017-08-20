@@ -1,16 +1,12 @@
-{"@context": [
-    {
-        "cjld": "https://github.com/stuchalk/cjld/cjldo.owl#"
+{
+    "@context": [{"cjld": "https://github.com/stuchalk/cjld/cjldo.owl#"}],
+    "@vocab": "http://www.w3.org/2001/XMLSchema#",
+    "isotope": {
+        "@id": "cjld:isIsotope",
+        "@type": "@id"
     },
-    {
-        "@vocab": "http://www.w3.org/2001/XMLSchema#",
-        "isotope": {
-            "@id": "cjld:isIsotope",
-            "@type": "@id"
-        },
-        "location": {
-            "@id": "cjld:locatedAtPosition",
-            "@type": "@id"
-        }
+    "location": {
+        "@id": "cjld:locatedAtPosition",
+        "@type": "@id"
     }
-]}
+}

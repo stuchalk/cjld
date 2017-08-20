@@ -1,24 +1,20 @@
-{"@context": [
-    {
-        "dc": "http://purl.org/dc/terms/",
-    	"cjld": "https://github.com/stuchalk/cjld/cjldo.owl"
+{
+    "@context": [{"cjld": "https://github.com/stuchalk/cjld/cjldo.owl"}],
+    "@vocab": "http://www.w3.org/2001/XMLSchema#",
+    "format": {
+        "@id": "cjld:coordinateSystem",
+        "@type": "string"
     },
-    {
-        "@vocab": "http://www.w3.org/2001/XMLSchema#",
-        "format": {
-        	"@id": "cjld:coordinateSystem"
-        },
-        "xcoord": {
-            "@id": "cjld:xAxisPosition",
-            "@type": "decimal"
-        },
-        "ycoord": {
-            "@id": "cjld:yAxisPosition",
-            "@type": "decimal"
-        },
-        "zcoord": {
-            "@id": "cjld:zAxisPosition",
-            "@type": "decimal"
-        }
+    "xcoord": {
+        "@id": "cjld:xAxisPosition",
+        "@type": "decimal"
+    },
+    "ycoord": {
+        "@id": "cjld:yAxisPosition",
+        "@type": "decimal"
+    },
+    "zcoord": {
+        "@id": "cjld:zAxisPosition",
+        "@type": "decimal"
     }
-]}
+}

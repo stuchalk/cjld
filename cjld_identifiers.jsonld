@@ -1,9 +1,5 @@
 {
-    "@context": [{
-        "dc": "http://purl.org/dc/terms/",
-        "cjld": "https://github.com/stuchalk/cjld/cjldo.owl#",
-        "ci": "http://semanticscience.org/ontology/cheminf.owl#"
-    }],
+    "@context": [{"ci": "http://semanticscience.org/ontology/cheminf.owl#"}],
     "@vocab": "http://www.w3.org/2001/XMLSchema#",
     "iupacname": {
         "@id": "ci:CHEMINF_000107",
@@ -26,4 +22,3 @@
         "@type": "string"
     }
 }
-

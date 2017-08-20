@@ -1,0 +1,794 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://github.com/stuchalk/chemicaljson/cjo.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://github.com/stuchalk/chemicaljson/cjo.owl">
+    <Prefix name="" IRI="http://github.com/stuchalk/chemicaljson/cjo.owl#"/>
+    <Prefix name="cjo" IRI="http://github.com/stuchalk/chemicaljson/cjo.owl"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Import>http://purl.obolibrary.org/obo/ChemOnt/2.1/ChemOnt.owl</Import>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Chemical JSON-LD Ontology</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#created_by"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Stuart Chalk</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#carbon_14"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#element"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#shares_one_electron_with"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#bcfm_carbon_atom"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#fcm_hydrogen_atom1"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#hydrogen"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#bromine"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#has_atomic_number"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#lowest_priority_atom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#stereochemical_entity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#chlorine"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#fcm_fluorine_atom"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#fluorochloromethane"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#bromine_81"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#bcfm_hydrogen_atom"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_element_type"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#hydrogen_3"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#bond_order"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#fcm_hydrogen_atom2"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_atom"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#bcfm_bromine_atom"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#shares_two_electrons_with"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#chain_atom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#carbon_12"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#molecule"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#fcm_chlorine_atom"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#bromochlorofluoromethane"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#fluorine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#hydrogen_2"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#is_central_atom"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#created_by"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#bcfm_chlorine_atom"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#fcm_carbon_atom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#1"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#has_priority"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#atom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#covalent_bond"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_chiral_center"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#has_mass_number"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#carbon_13"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#bcfm_fluorine_atom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#chiral"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#chiral_center"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#single_bond"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#hydrogen_1"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#compound"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#bonded_to"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#2"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#nitrogen"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#isotope"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#bromine_79"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#bond_type"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#carbon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#position"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_position"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#is_isotope"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#bromine"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#atom"/>
+            <DataHasValue>
+                <DataProperty IRI="#has_atomic_number"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">35</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#bromine_79"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#bromine"/>
+            <DataHasValue>
+                <DataProperty IRI="#has_mass_number"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">79</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#bromine_81"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#bromine"/>
+            <DataHasValue>
+                <DataProperty IRI="#has_mass_number"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">81</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#carbon"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#atom"/>
+            <DataHasValue>
+                <DataProperty IRI="#has_atomic_number"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">6</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#carbon_12"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#carbon"/>
+            <DataHasValue>
+                <DataProperty IRI="#has_mass_number"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">12</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#carbon_13"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#carbon"/>
+            <DataHasValue>
+                <DataProperty IRI="#has_mass_number"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">13</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#carbon_14"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#carbon"/>
+            <DataHasValue>
+                <DataProperty IRI="#has_mass_number"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">14</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#chain_atom"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#atom"/>
+            <ObjectMinCardinality cardinality="2">
+                <ObjectProperty IRI="#bonded_to"/>
+                <Class IRI="#atom"/>
+            </ObjectMinCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#chiral"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#molecule"/>
+            <ObjectExactCardinality cardinality="1">
+                <ObjectProperty IRI="#has_chiral_center"/>
+                <Class IRI="#chiral_center"/>
+            </ObjectExactCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#chiral_center"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#chain_atom"/>
+            <ObjectMinCardinality cardinality="4">
+                <ObjectProperty IRI="#bonded_to"/>
+                <DataSomeValuesFrom>
+                    <DataProperty IRI="#has_atomic_number"/>
+                    <Datatype abbreviatedIRI="xsd:integer"/>
+                </DataSomeValuesFrom>
+            </ObjectMinCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#chlorine"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#atom"/>
+            <DataHasValue>
+                <DataProperty IRI="#has_atomic_number"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">17</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#fluorine"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#atom"/>
+            <DataHasValue>
+                <DataProperty IRI="#has_atomic_number"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">9</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#hydrogen"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#atom"/>
+            <DataHasValue>
+                <DataProperty IRI="#has_atomic_number"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#hydrogen_1"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#hydrogen"/>
+            <DataHasValue>
+                <DataProperty IRI="#has_mass_number"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#hydrogen_2"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#hydrogen"/>
+            <DataHasValue>
+                <DataProperty IRI="#has_mass_number"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#hydrogen_3"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#hydrogen"/>
+            <DataHasValue>
+                <DataProperty IRI="#has_mass_number"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#isotope"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#atom"/>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#has_atomic_number"/>
+                <Datatype abbreviatedIRI="xsd:integer"/>
+            </DataSomeValuesFrom>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#has_mass_number"/>
+                <Datatype abbreviatedIRI="xsd:integer"/>
+            </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#molecule"/>
+        <ObjectMinCardinality cardinality="2">
+            <ObjectProperty IRI="#has_atom"/>
+            <Class IRI="#atom"/>
+        </ObjectMinCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#nitrogen"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#atom"/>
+            <DataHasValue>
+                <DataProperty IRI="#has_atomic_number"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">7</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#single_bond"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#atom"/>
+            <ObjectExactCardinality cardinality="1">
+                <ObjectProperty IRI="#shares_one_electron_with"/>
+                <Class IRI="#atom"/>
+            </ObjectExactCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#bromine"/>
+        <Class IRI="#element"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#carbon"/>
+        <Class IRI="#element"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#chain_atom"/>
+        <Class IRI="#stereochemical_entity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#chiral_center"/>
+        <Class IRI="#stereochemical_entity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#chlorine"/>
+        <Class IRI="#element"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#covalent_bond"/>
+        <Class IRI="#bond_type"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#fluorine"/>
+        <Class IRI="#element"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#hydrogen"/>
+        <Class IRI="#element"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#lowest_priority_atom"/>
+        <Class IRI="#stereochemical_entity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#nitrogen"/>
+        <Class IRI="#element"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#single_bond"/>
+        <Class IRI="#covalent_bond"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#1"/>
+        <Class IRI="#bond_order"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#2"/>
+        <Class IRI="#bond_order"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#bromine"/>
+        <Class IRI="#carbon"/>
+        <Class IRI="#chlorine"/>
+        <Class IRI="#fluorine"/>
+        <Class IRI="#hydrogen"/>
+        <Class IRI="#nitrogen"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#carbon_12"/>
+        <Class IRI="#carbon_13"/>
+        <Class IRI="#carbon_14"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#atom"/>
+        <NamedIndividual IRI="#bcfm_bromine_atom"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <NamedIndividual IRI="#bcfm_bromine_atom"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#atom"/>
+        <NamedIndividual IRI="#bcfm_carbon_atom"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <NamedIndividual IRI="#bcfm_carbon_atom"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#atom"/>
+        <NamedIndividual IRI="#bcfm_chlorine_atom"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <NamedIndividual IRI="#bcfm_chlorine_atom"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#atom"/>
+        <NamedIndividual IRI="#bcfm_fluorine_atom"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <NamedIndividual IRI="#bcfm_fluorine_atom"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#atom"/>
+        <NamedIndividual IRI="#bcfm_hydrogen_atom"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <NamedIndividual IRI="#bcfm_hydrogen_atom"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <NamedIndividual IRI="#bromochlorofluoromethane"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#atom"/>
+        <NamedIndividual IRI="#fcm_carbon_atom"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <NamedIndividual IRI="#fcm_carbon_atom"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#atom"/>
+        <NamedIndividual IRI="#fcm_chlorine_atom"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <NamedIndividual IRI="#fcm_chlorine_atom"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#atom"/>
+        <NamedIndividual IRI="#fcm_fluorine_atom"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <NamedIndividual IRI="#fcm_fluorine_atom"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#atom"/>
+        <NamedIndividual IRI="#fcm_hydrogen_atom1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <NamedIndividual IRI="#fcm_hydrogen_atom1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#atom"/>
+        <NamedIndividual IRI="#fcm_hydrogen_atom2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <NamedIndividual IRI="#fcm_hydrogen_atom2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <NamedIndividual IRI="#fluorochloromethane"/>
+    </ClassAssertion>
+    <SameIndividual>
+        <NamedIndividual IRI="#fcm_hydrogen_atom1"/>
+        <NamedIndividual IRI="#fcm_hydrogen_atom2"/>
+    </SameIndividual>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#shares_one_electron_with"/>
+        <NamedIndividual IRI="#bcfm_carbon_atom"/>
+        <NamedIndividual IRI="#bcfm_bromine_atom"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#shares_one_electron_with"/>
+        <NamedIndividual IRI="#bcfm_carbon_atom"/>
+        <NamedIndividual IRI="#bcfm_chlorine_atom"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#shares_one_electron_with"/>
+        <NamedIndividual IRI="#bcfm_carbon_atom"/>
+        <NamedIndividual IRI="#bcfm_fluorine_atom"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#shares_one_electron_with"/>
+        <NamedIndividual IRI="#bcfm_carbon_atom"/>
+        <NamedIndividual IRI="#bcfm_hydrogen_atom"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_atom"/>
+        <NamedIndividual IRI="#bromochlorofluoromethane"/>
+        <NamedIndividual IRI="#bcfm_bromine_atom"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_atom"/>
+        <NamedIndividual IRI="#bromochlorofluoromethane"/>
+        <NamedIndividual IRI="#bcfm_carbon_atom"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_atom"/>
+        <NamedIndividual IRI="#bromochlorofluoromethane"/>
+        <NamedIndividual IRI="#bcfm_chlorine_atom"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_atom"/>
+        <NamedIndividual IRI="#bromochlorofluoromethane"/>
+        <NamedIndividual IRI="#bcfm_fluorine_atom"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_atom"/>
+        <NamedIndividual IRI="#bromochlorofluoromethane"/>
+        <NamedIndividual IRI="#bcfm_hydrogen_atom"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#shares_one_electron_with"/>
+        <NamedIndividual IRI="#fcm_carbon_atom"/>
+        <NamedIndividual IRI="#fcm_chlorine_atom"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#shares_one_electron_with"/>
+        <NamedIndividual IRI="#fcm_carbon_atom"/>
+        <NamedIndividual IRI="#fcm_fluorine_atom"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#shares_one_electron_with"/>
+        <NamedIndividual IRI="#fcm_carbon_atom"/>
+        <NamedIndividual IRI="#fcm_hydrogen_atom1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#shares_one_electron_with"/>
+        <NamedIndividual IRI="#fcm_carbon_atom"/>
+        <NamedIndividual IRI="#fcm_hydrogen_atom2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_atom"/>
+        <NamedIndividual IRI="#fluorochloromethane"/>
+        <NamedIndividual IRI="#fcm_carbon_atom"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_atom"/>
+        <NamedIndividual IRI="#fluorochloromethane"/>
+        <NamedIndividual IRI="#fcm_chlorine_atom"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_atom"/>
+        <NamedIndividual IRI="#fluorochloromethane"/>
+        <NamedIndividual IRI="#fcm_fluorine_atom"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_atom"/>
+        <NamedIndividual IRI="#fluorochloromethane"/>
+        <NamedIndividual IRI="#fcm_hydrogen_atom1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_atom"/>
+        <NamedIndividual IRI="#fluorochloromethane"/>
+        <NamedIndividual IRI="#fcm_hydrogen_atom2"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_atomic_number"/>
+        <NamedIndividual IRI="#bcfm_bromine_atom"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">35</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_atomic_number"/>
+        <NamedIndividual IRI="#bcfm_carbon_atom"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_atomic_number"/>
+        <NamedIndividual IRI="#bcfm_chlorine_atom"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">17</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_atomic_number"/>
+        <NamedIndividual IRI="#bcfm_fluorine_atom"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">9</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_atomic_number"/>
+        <NamedIndividual IRI="#bcfm_hydrogen_atom"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_atomic_number"/>
+        <NamedIndividual IRI="#fcm_carbon_atom"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_atomic_number"/>
+        <NamedIndividual IRI="#fcm_chlorine_atom"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">17</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_atomic_number"/>
+        <NamedIndividual IRI="#fcm_fluorine_atom"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">9</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_atomic_number"/>
+        <NamedIndividual IRI="#fcm_hydrogen_atom1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_atomic_number"/>
+        <NamedIndividual IRI="#fcm_hydrogen_atom2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#shares_one_electron_with"/>
+        <ObjectProperty IRI="#bonded_to"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#shares_two_electrons_with"/>
+        <ObjectProperty IRI="#bonded_to"/>
+    </SubObjectPropertyOf>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="#bonded_to"/>
+    </SymmetricObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#bonded_to"/>
+        <Class IRI="#atom"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_chiral_center"/>
+        <Class IRI="#molecule"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_position"/>
+        <Class IRI="#atom"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#is_central_atom"/>
+        <Class IRI="#atom"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#shares_one_electron_with"/>
+        <Class IRI="#atom"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#shares_two_electrons_with"/>
+        <Class IRI="#atom"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#bonded_to"/>
+        <Class IRI="#atom"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_atom"/>
+        <Class IRI="#atom"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_chiral_center"/>
+        <Class IRI="#chiral_center"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_position"/>
+        <Class IRI="#position"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#is_central_atom"/>
+        <Class IRI="#chain_atom"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#shares_one_electron_with"/>
+        <Class IRI="#atom"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#has_atomic_number"/>
+        <Class IRI="#atom"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#has_mass_number"/>
+        <Class IRI="#atom"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#has_atomic_number"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#has_mass_number"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#atom</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">The smallest representative particle of matter</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#molecule</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">A type of matter composed of two or more atoms bonded together by covalent bonds</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#1</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">single bond</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#2</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">double bond</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi -->
+

@@ -1,0 +1,29 @@
+{
+    "@context": [{
+        "dc": "http://purl.org/dc/terms/",
+        "cjld": "https://github.com/stuchalk/cjld/cjldo.owl#",
+        "ci": "http://semanticscience.org/ontology/cheminf.owl#"
+    }],
+    "@vocab": "http://www.w3.org/2001/XMLSchema#",
+    "iupacname": {
+        "@id": "ci:CHEMINF_000107",
+        "@type": "string"
+    },
+    "inchi": {
+        "@id": "ci:CHEMINF_000396",
+        "@type": "string"
+    },
+    "inchikey": {
+        "@id": "ci:CHEMINF_000399",
+        "@type": "string"
+    },
+    "formula": {
+        "@id": "ci:CHEMINF_000037",
+        "@type": "string"
+    },
+    "smiles": {
+        "@id": "ci:CHEMINF_000007",
+        "@type": "string"
+    }
+}
+

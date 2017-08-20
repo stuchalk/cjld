@@ -1,0 +1,67 @@
+{"@context": [
+    {
+        "dc": "http://purl.org/dc/terms/",
+        "schema": "http://schema.org/",
+        "foaf": "http://xmlns.com/foaf/0.1/",
+        "cjld": "https://github.com/stuchalk/cjld/cjldo.owl#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
+    },
+    {
+        "@vocab": "http://www.w3.org/2001/XMLSchema#",
+        "author": {
+            "@id": "dc:creator",
+            "@type": "string"
+        },
+        "organization": {
+            "@id": "schema:worksFor",
+            "@type": "string"
+        },
+        "email": {
+            "@id": "foaf:mbox",
+            "@type": "string"
+        },
+        "created": {
+            "@id": "dc:created",
+            "@type": "date"
+        },
+        "updated": {
+            "@id": "cjld:updated",
+            "@type": "date"
+        },
+        "converted_from": {
+            "@id": "cjld:convertedFrom",
+            "@type": "string"
+        },
+        "software": {
+            "@id": "cjld:software",
+            "name": {"@type": "name"},
+            "version": {"@type": "version"}
+        },
+        "name": {
+            "@id": "dc:title",
+            "@type": "string"
+        },
+        "version": {
+            "@id": "dc:hasVersion",
+            "@type": "string"
+        },
+        "validation": {
+            "@id": "cjld:hasValidation",
+            "status": {"@type": "status"},
+            "validated": {"@type": "validated"},
+            "service": {"@type": "validated"}
+        },
+        "status": {
+            "@id": "cjld:validationStatus",
+            "@type": "string"
+        },
+        "validated": {
+            "@id": "cjld:validationDate",
+            "@type": "date"
+        },
+        "service": {
+            "@id": "cjld:validationService",
+            "@type": "@id"
+        }
+    }
+]}

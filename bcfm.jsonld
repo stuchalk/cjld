@@ -1,0 +1,280 @@
+{
+    "$schema": "https://github.com/stuchalk/cjld/cjld_schema.json",
+    "@context": [
+        "https://github.com/stuchalk/cjld/cjld_context.jsonld",
+        {
+            "dc": "http://purl.org/dc/terms/",
+            "cjld": "https://github.com/stuchalk/cjld/cjldo.owl",
+            "obo": "http://purl.obolibrary.org/obo/",
+            "ci": "http://semanticscience.org/ontology/cheminf.owl#"
+        },
+        {"@base": "https://github.com/stuchalk/cjld/bcfm.jsonld#"}
+    ],
+    "entity": "https://github.com/stuchalk/cjld/molecule",
+    "toc": {
+        "@id": "toc/",
+        "@type": "dc:tableOfContents",
+        "name": "toc",
+        "entries": [
+            "format/",
+            "metadata/",
+            "identifiers/",
+            "elementlayer/",
+            "atomlayer/",
+            "bondlayer/",
+            "positionlayer/"
+        ]
+    },
+    "layers": [
+        {
+            "@id": "format/",
+            "@type": "dc:format",
+            "name": "format",
+            "reference": "https://github.com/stuchalk/cjld/format_layer",
+            "content": {
+                "@context": "https://github.com/stuchalk/cjld/cjld_format.jsonld",
+                "@id": "format/meta/",
+                "@type": "dc:description",
+                "name": "Chemical JSON-LD Framework",
+                "spec": "http://github.com/stuchalk/cjld",
+                "publisher": "Stuart Chalk",
+                "version": 0.1,
+                "date": "2017-06-01T07:30:15Z"
+            }
+        },
+        {
+            "@id": "provenance/",
+            "@type": "dc:provenance",
+            "name": "provenance",
+            "reference": "https://github.com/stuchalk/cjld/provenance_layer",
+            "content": {
+                "@context": "https://github.com/stuchalk/cjld/cjld_provenance.jsonld",
+                "@id": "provenance/meta/",
+                "@type": "dc:description",
+                "author": "Stuart Chalk",
+                "organization": "University of North Florida",
+                "email": "schalk@unf.edu",
+                "software": {
+                    "@id": "provenance/software",
+                    "@type": "cjld:software",
+                    "name": "OxygenXML",
+                    "version": "19.0.1"
+                },
+                "created": "2017-06-05T010:03:14Z",
+                "updated": "2017-06-07T011:11:52Z",
+                "converted_from": "bcfm.mol",
+                "validation": {
+                    "@id": "provenance/validation/",
+                    "@type": "cjld:validation",
+                    "status": "valid",
+                    "validated": "2017-06-08",
+                    "service": "http://chalk.coas.unf.edu/cjld/services/validate"
+                }
+            }
+        },
+        {
+            "@id": "identifiers/",
+            "@type": "dc:identifier",
+            "name": "chemical identifiers",
+            "reference": "https://github.com/stuchalk/cjld/identifier_layer",
+            "content": {
+                "@context": "https://github.com/stuchalk/cjld/cjld_identifiers.jsonld",
+                "@id": "molecule/1",
+                "@type": "ci:CHEMINF_000464",
+                "iupacname": "bromo-chloro-fluoromethane",
+                "inchi": "InChI=1S/CHBrClF/c2-1(3)4/h1H",
+                "formula": "CHBrClF"
+            }
+        },
+        {
+            "@id": "isotopelayer/",
+            "@type": "cjld:containsIsotopes",
+            "name": "isotopes",
+            "reference": "https://github.com/stuchalk/cjld/isotope_layer",
+            "@context": "https://github.com/stuchalk/cjld/cjld_isotope.jsonld",
+            "content": [
+                {
+                    "@id": "isotope/1/",
+                    "@type": "CHEBI:49637",
+                    "rdfs_label": "1H",
+                    "protoncount": 1,
+                    "neutroncount": 0,
+                    "electroncount": 1
+                },
+                {
+                    "@id": "isotope/2/",
+                    "@type": "CHEBI:33250",
+                    "rdfs_label": "C",
+                    "protoncount": 6,
+                    "electroncount": 6
+                },
+                {
+                    "@id": "isotope/3/",
+                    "@type": "CHEBI:22927",
+                    "rdfs_label": "Br",
+                    "protoncount": 35,
+                    "electroncount": 35
+                },
+                {
+                    "@id": "isotope/4/",
+                    "@type": "CHEBI:23116",
+                    "rdfs_label": "Cl",
+                    "protoncount": 17,
+                    "electroncount": 17
+                },
+                {
+                    "@id": "isotope/5/",
+                    "@type": "CHEBI:24061",
+                    "rdfs_label": "F",
+                    "protoncount": 9,
+                    "electroncount": 9
+                }
+            ]
+        },
+        {
+            "@id": "atomlayer/",
+            "@type": "cjld:containsAtoms",
+            "name": "atoms",
+            "scope": "molecule/1",
+            "reference": "https://github.com/stuchalk/cjld/atom_layer",
+            "@context": "https://github.com/stuchalk/cjld/cjld_atom.jsonld",
+            "content": [
+                {
+                    "@id": "atom/1/",
+                    "@type": "CHEBI:33250",
+                    "rdfs_label": "C",
+                    "isotope": "isotope/2/",
+                    "location": "position/1/"
+                },
+                {
+                    "@id": "atom/2/",
+                    "@type": "CHEBI:33250",
+                    "rdfs_label": "Br",
+                    "isotope": "isotope/3/",
+                    "location": "position/2/"
+                },
+                {
+                    "@id": "atom/3/",
+                    "@type": "CHEBI:33250",
+                    "rdfs_label": "Cl",
+                    "isotope": "isotope/4/",
+                    "location": "position/3/"
+                },
+                {
+                    "@id": "atom/4/",
+                    "@type": "CHEBI:33250",
+                    "rdfs_label": "F",
+                    "isotope": "isotope/5/",
+                    "location": "position/4/"
+                },
+                {
+                    "@id": "atom/5/",
+                    "@type": "CHEBI:33250",
+                    "rdfs_label": "H",
+                    "isotope": "isotope/1/",
+                    "location": "position/5/"
+                }
+            ]
+        },
+        {
+            "@id": "bondlayer",
+            "@type": "cjld:containsBonds",
+            "name": "bonds",
+            "scope": "molecule/1",
+            "reference": "https://github.com/stuchalk/cjld/bond_layer",
+            "@context": "https://github.com/stuchalk/cjld/cjld_bond.jsonld",
+            "content": [
+                {
+                    "@id": "bond/1/",
+                    "@type": "ci:CHEMINF_000063",
+                    "type": "ci:SIO_010498",
+                    "order": 1,
+                    "participants": [
+                        "atom/1",
+                        "atom/2"
+                    ]
+                },
+                {
+                    "@id": "bond/2/",
+                    "@type": "ci:CHEMINF_000063",
+                    "type": "ci:SIO_010498",
+                    "order": 1,
+                    "participants": [
+                        "atom/1",
+                        "atom/3"
+                    ]
+                },
+                {
+                    "@id": "bond/3/",
+                    "@type": "ci:CHEMINF_000063",
+                    "type": "ci:SIO_010498",
+                    "order": 1,
+                    "participants": [
+                        "atom/1",
+                        "atom/4"
+                    ]
+                },
+                {
+                    "@id": "bond/4/",
+                    "@type": "ci:CHEMINF_000063",
+                    "type": "ci:SIO_010498",
+                    "order": 1,
+                    "participants": [
+                        "atom/1",
+                        "atom/5"
+                    ]
+                }
+            ]
+        },
+        {
+            "@id": "positionlayer/",
+            "@type": "cjdl:containsPostions",
+            "name": "positions",
+            "reference": "https://github.com/stuchalk/cjld/position_layer",
+            "@context": "https://github.com/stuchalk/cjld/cjld_position.jsonld",
+            "content": [
+                {
+                    "@id": "position/1/",
+                    "@type": "sio:SIO_000056",
+                    "format": "cartesian",
+                    "xcoord": -0.3102,
+                    "ycoord": 0.4946,
+                    "zcoord": -0.022
+                },
+                {
+                    "@id": "position/2/",
+                    "@type": "sio:SIO_000056",
+                    "format": "cartesian",
+                    "xcoord": -0.7301,
+                    "ycoord": -0.074,
+                    "zcoord": -0.7743
+                },
+                {
+                    "@id": "position/3/",
+                    "@type": "sio:SIO_000056",
+                    "format": "cartesian",
+                    "xcoord": -0.5159,
+                    "ycoord": 0.1117,
+                    "zcoord": 0.8127
+                },
+                {
+                    "@id": "position/4/",
+                    "format": "cartesian",
+                    "@type": "sio:SIO_000056",
+                    "xcoord": 0.4187,
+                    "ycoord": 0.5156,
+                    "zcoord": -0.1089
+                },
+                {
+                    "@id": "position/5/",
+                    "format": "cartesian",
+                    "@type": "sio:SIO_000056",
+                    "xcoord": -0.5247,
+                    "ycoord": 1.0372,
+                    "zcoord": -0.0454
+                }
+            ]
+        }
+    ]
+}
+
